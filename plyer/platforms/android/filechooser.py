@@ -143,10 +143,10 @@ class AndroidFileChooser(FileChooser):
 
         # bad response
         if result_code != Activity.RESULT_OK:
-            print(
-                'Activity result failed',
-                result_code, data.getData().toString()
-            )
+            # print(
+            #     'Activity result failed',
+            #     result_code, data.getData().toString()
+            # )
             return
 
         selection = self._resolve_uri(data.getData()) or []
